@@ -10,38 +10,46 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background: #fafafa;
       color: #333;
-      line-height: 1.6;
     }
     header {
-      background: #ffffff;
-      padding: 60px 20px;
+      background: linear-gradient(135deg, #fff7e6, #ffe0b2);
+      padding: 80px 20px 100px;
       text-align: center;
     }
+    header img {
+      width: 120px;
+      margin-bottom: 30px;
+    }
     header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-      font-weight: 600;
+      font-size: 44px;
+      margin: 0 0 10px;
     }
     header p {
       font-size: 18px;
-      color: #666;
       max-width: 600px;
       margin: 0 auto;
+      color: #555;
     }
     .container {
       max-width: 1100px;
-      margin: 0 auto;
-      padding: 60px 20px;
+      margin: -60px auto 0;
+      padding: 40px 20px 80px;
     }
-    .images {
+    .hero-card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
     }
-    .images img {
+    .grid img {
       width: 100%;
-      border-radius: 16px;
+      border-radius: 20px;
       object-fit: cover;
     }
     h2 {
@@ -50,23 +58,24 @@
     }
     ul {
       padding-left: 20px;
+      line-height: 1.8;
     }
     .cta {
-      background: #ffffff;
-      border-radius: 20px;
-      padding: 40px;
-      text-align: center;
       margin-top: 60px;
+      text-align: center;
+      background: #fff7e6;
+      border-radius: 20px;
+      padding: 40px 20px;
     }
     .cta a {
       display: inline-block;
       margin-top: 20px;
-      padding: 14px 32px;
-      background: #e6c98c;
-      color: #000;
+      padding: 14px 36px;
+      background: #ff9800;
+      color: #fff;
       text-decoration: none;
       border-radius: 30px;
-      font-weight: 500;
+      font-size: 16px;
     }
     footer {
       text-align: center;
@@ -79,42 +88,53 @@
 <body>
 
 <header>
-  <!-- ЛОГОТИП -->
-  <!-- <img src="logo.png" alt="Логотип" style="height:80px; margin-bottom:20px;"> -->
-
+  <!-- логотип -->
+  <img src="1.jpg" alt="Логотип">
   <h1>День йоги</h1>
   <p>Праздник гармонии, движения и осознанности для всей семьи</p>
 </header>
 
-<section class="container">
-  <!-- КАРТИНКИ НА ЛЕНДИНГЕ -->
-  <div class="images">
-    <!-- Замените src на свои изображения -->
-    <img src="image-1.jpg" alt="День йоги" />
-    <img src="image-2.jpg" alt="Йога и движение" />
+<div class="container">
+  <div class="hero-card">
+    <div class="grid">
+      <img src="2.jpg" alt="Участники мероприятия">
+      <img src="2.jpg" alt="Танец и движение">
+    </div>
+
+    <h2>О мероприятии</h2>
+    <p>
+      День йоги — это тёплое и вдохновляющее событие, объединяющее практики движения,
+      дыхания и внутреннего баланса. Подходит для взрослых и детей, независимо от уровня подготовки.
+    </p>
+
+    <h2>В программе</h2>
+    <ul>
+      <li>Йога и мягкие телесные практики</li>
+      <li>Дыхательные упражнения</li>
+      <li>Семейный формат и детская зона</li>
+      <li>Спокойная, поддерживающая атмосфера</li>
+    </ul>
+
+    <div class="cta">
+      <h2>Присоединяйтесь</h2>
+      <p>Станьте частью праздника гармонии и движения</p>
+      <a href="#gallery">Смотреть галерею</a>
+    </div>
+
+    <!-- Галерея -->
+    <section id="gallery" style="margin-top:80px;">
+      <h2>Галерея мероприятия</h2>
+      <p>Моменты радости, движения и единения</p>
+      <div class="grid" style="margin-top:30px;">
+        <img src="2.jpg" alt="Фото 1">
+        <img src="2.jpg" alt="Фото 2">
+        <img src="2.jpg" alt="Фото 3">
+        <img src="2.jpg" alt="Фото 4">
+      </div>
+    </section>
+
   </div>
-
-  <h2>О мероприятии</h2>
-  <p>
-    День йоги — это светлое и тёплое событие, посвящённое здоровью, дыханию и внутреннему балансу.
-    Практики подойдут как для начинающих, так и для тех, кто давно знаком с йогой.
-  </p>
-
-  <h2>Что вас ждёт</h2>
-  <ul>
-    <li>Практики йоги для любого уровня</li>
-    <li>Дыхательные техники и расслабление</li>
-    <li>Семейный и детский формат</li>
-    <li>Спокойная и поддерживающая атмосфера</li>
-  </ul>
-
-  <div class="cta">
-    <h2>Фотогалерея</h2>
-    <p>Посмотрите атмосферу и моменты с мероприятия</p>
-    <!-- ССЫЛКА НА ГАЛЕРЕЮ -->
-    <a href="gallery.html">Открыть галерею</a>
-  </div>
-</section>
+</div>
 
 <footer>
   © День йоги · Все права защищены
