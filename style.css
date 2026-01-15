@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #fff7e6, #ffe0b2);
+  padding: 80px 20px 100px;
+  text-align: center;
+}
+
+header img {
+  width: 120px;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: -60px auto 0;
+  padding: 40px 20px 80px;
+}
+
+.hero-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cta {
+  margin-top: 60px;
+  text-align: center;
+  background: #fff7e6;
+  border-radius: 20px;
+  padding: 40px 20px;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+#modal img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.nav {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.left { left: 30px; }
+.right { right: 30px; }
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+}
